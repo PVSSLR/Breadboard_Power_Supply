@@ -1,0 +1,443 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Breadboard Power Supply"
+Date "2019-10-31"
+Rev ""
+Comp ""
+Comment1 "Designed By Sunil Raj"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Diode:1N4007 D1
+U 1 1 5DBB262E
+P 2500 3050
+F 0 "D1" H 2500 3266 50  0000 C CNN
+F 1 "1N4007" H 2500 3175 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2500 2875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2500 3050 50  0001 C CNN
+	1    2500 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4007 D3
+U 1 1 5DBB4027
+P 3050 3050
+F 0 "D3" H 3050 3266 50  0000 C CNN
+F 1 "1N4007" H 3050 3175 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3050 2875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3050 3050 50  0001 C CNN
+	1    3050 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4007 D2
+U 1 1 5DBB5E43
+P 2500 3800
+F 0 "D2" H 2500 4016 50  0000 C CNN
+F 1 "1N4007" H 2500 3925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2500 3625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2500 3800 50  0001 C CNN
+	1    2500 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4007 D4
+U 1 1 5DBB62C7
+P 3050 3800
+F 0 "D4" H 3050 4016 50  0000 C CNN
+F 1 "1N4007" H 3050 3925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3050 3625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3050 3800 50  0001 C CNN
+	1    3050 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5DBB6DFE
+P 4050 3050
+F 0 "C1" H 4168 3096 50  0000 L CNN
+F 1 "CP" H 4168 3005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4088 2900 50  0001 C CNN
+F 3 "~" H 4050 3050 50  0001 C CNN
+	1    4050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5DBBD3EA
+P 7850 3800
+F 0 "D6" V 7797 3878 50  0000 L CNN
+F 1 "LED" V 7888 3878 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 7850 3800 50  0001 C CNN
+F 3 "~" H 7850 3800 50  0001 C CNN
+	1    7850 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5DBBDB30
+P 6050 3750
+F 0 "D5" H 6043 3966 50  0000 C CNN
+F 1 "LED" H 6043 3875 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6050 3750 50  0001 C CNN
+F 3 "~" H 6050 3750 50  0001 C CNN
+	1    6050 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DBBE09B
+P 7850 3050
+F 0 "R2" H 7780 3004 50  0000 R CNN
+F 1 "R" H 7780 3095 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7780 3050 50  0001 C CNN
+F 3 "~" H 7850 3050 50  0001 C CNN
+	1    7850 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DBBE754
+P 6050 3050
+F 0 "R1" V 5843 3050 50  0000 C CNN
+F 1 "R" V 5934 3050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5980 3050 50  0001 C CNN
+F 3 "~" H 6050 3050 50  0001 C CNN
+	1    6050 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 1 1 5DBBEC54
+P 7000 2500
+F 0 "SW1" H 7000 2785 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 7000 2694 50  0000 C CNN
+F 2 "digikey-footprints:Switch_Slide_11.6x4mm_EG1218" H 7000 2500 50  0001 C CNN
+F 3 "~" H 7000 2500 50  0001 C CNN
+	1    7000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J2
+U 1 1 5DBBFEB6
+P 9000 2400
+F 0 "J2" H 9050 2617 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 9050 2526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 9000 2400 50  0001 C CNN
+F 3 "~" H 9000 2400 50  0001 C CNN
+	1    9000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J3
+U 1 1 5DBC08A5
+P 9000 3400
+F 0 "J3" H 9050 3617 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 9050 3526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 9000 3400 50  0001 C CNN
+F 3 "~" H 9000 3400 50  0001 C CNN
+	1    9000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 5DBC12E1
+P 1050 3450
+F 0 "J1" H 1107 3767 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1107 3676 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1100 3410 50  0001 C CNN
+F 3 "~" H 1100 3410 50  0001 C CNN
+	1    1050 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2900 2500 2650
+Wire Wire Line
+	2500 2650 2750 2650
+Wire Wire Line
+	3050 2650 3050 2900
+Wire Wire Line
+	2500 3950 2500 4300
+Wire Wire Line
+	2500 4300 2700 4300
+Wire Wire Line
+	3050 4300 3050 3950
+Wire Wire Line
+	3050 3200 3050 3550
+Wire Wire Line
+	1900 3350 2500 3350
+Wire Wire Line
+	2500 3200 2500 3350
+Connection ~ 2500 3350
+Wire Wire Line
+	2500 3350 2500 3650
+Wire Wire Line
+	1900 3550 3050 3550
+Connection ~ 3050 3550
+Wire Wire Line
+	3050 3550 3050 3650
+NoConn ~ 1350 3450
+Wire Wire Line
+	2750 2500 2750 2650
+Connection ~ 2750 2650
+Wire Wire Line
+	2750 2650 3050 2650
+Wire Wire Line
+	4050 2900 4050 2500
+Wire Wire Line
+	2700 4300 2700 4550
+Connection ~ 2700 4300
+Wire Wire Line
+	2700 4300 3050 4300
+Wire Wire Line
+	4050 3200 4050 4550
+Connection ~ 4700 4550
+Wire Wire Line
+	5350 4550 4700 4550
+Wire Wire Line
+	5350 3200 5350 4550
+Wire Wire Line
+	5350 2500 5350 2900
+Wire Wire Line
+	5000 2500 5350 2500
+Wire Wire Line
+	4700 4550 4700 2800
+Wire Wire Line
+	4400 2500 4050 2500
+$Comp
+L Device:CP C2
+U 1 1 5DBB7A1E
+P 5350 3050
+F 0 "C2" H 5468 3096 50  0000 L CNN
+F 1 "CP" H 5468 3005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5388 2900 50  0001 C CNN
+F 3 "~" H 5350 3050 50  0001 C CNN
+	1    5350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U1
+U 1 1 5DBB0AA8
+P 4700 2500
+F 0 "U1" H 4700 2742 50  0000 C CNN
+F 1 "LM7805_TO220" H 4700 2651 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4700 2725 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 4700 2450 50  0001 C CNN
+	1    4700 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 4550
+Wire Wire Line
+	4050 4550 4350 4550
+Wire Wire Line
+	2700 4550 4050 4550
+Connection ~ 4050 2500
+Wire Wire Line
+	2750 2500 3350 2500
+Wire Wire Line
+	5350 2500 6050 2500
+Wire Wire Line
+	6050 2500 6050 2900
+Connection ~ 5350 2500
+Wire Wire Line
+	6050 3200 6050 3600
+Wire Wire Line
+	6050 3900 6050 4550
+Wire Wire Line
+	6050 4550 5350 4550
+Connection ~ 5350 4550
+Wire Wire Line
+	6050 2500 6800 2500
+Connection ~ 6050 2500
+Wire Wire Line
+	7200 2400 7850 2400
+Wire Wire Line
+	7850 2400 7850 2900
+Wire Wire Line
+	7850 3200 7850 3650
+Wire Wire Line
+	7850 3950 7850 4550
+Wire Wire Line
+	7850 4550 6050 4550
+Connection ~ 6050 4550
+Wire Wire Line
+	7850 2400 8350 2400
+Connection ~ 7850 2400
+Wire Wire Line
+	8350 2400 8350 3050
+Wire Wire Line
+	8350 3400 8800 3400
+Connection ~ 8350 2400
+Wire Wire Line
+	8350 2400 8800 2400
+Wire Wire Line
+	8800 2500 8500 2500
+Wire Wire Line
+	8500 2500 8500 2850
+Wire Wire Line
+	8500 4550 7850 4550
+Connection ~ 7850 4550
+Wire Wire Line
+	8800 3500 8500 3500
+Connection ~ 8500 3500
+Wire Wire Line
+	8500 3500 8500 4050
+Wire Wire Line
+	9300 2400 9700 2400
+Wire Wire Line
+	9700 2400 9700 2150
+Wire Wire Line
+	9700 2150 8350 2150
+Wire Wire Line
+	8350 2150 8350 2400
+NoConn ~ 7200 2600
+Wire Wire Line
+	9300 2500 9700 2500
+Wire Wire Line
+	9700 2500 9700 2850
+Wire Wire Line
+	9700 2850 8500 2850
+Connection ~ 8500 2850
+Wire Wire Line
+	8500 2850 8500 3500
+Wire Wire Line
+	9300 3500 9700 3500
+Wire Wire Line
+	9700 3500 9700 4050
+Wire Wire Line
+	9700 4050 8500 4050
+Connection ~ 8500 4050
+Wire Wire Line
+	8500 4050 8500 4550
+Wire Wire Line
+	9300 3400 9700 3400
+Wire Wire Line
+	9700 3400 9700 3050
+Wire Wire Line
+	9700 3050 8350 3050
+Connection ~ 8350 3050
+Wire Wire Line
+	8350 3050 8350 3400
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5DC26459
+P 3350 2500
+F 0 "#FLG0101" H 3350 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 2673 50  0000 C CNN
+F 2 "" H 3350 2500 50  0001 C CNN
+F 3 "~" H 3350 2500 50  0001 C CNN
+	1    3350 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 2500
+Wire Wire Line
+	3350 2500 4050 2500
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5DC26A01
+P 4350 4750
+F 0 "#FLG0102" H 4350 4825 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 4923 50  0000 C CNN
+F 2 "" H 4350 4750 50  0001 C CNN
+F 3 "~" H 4350 4750 50  0001 C CNN
+	1    4350 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 4750 4350 4550
+Connection ~ 4350 4550
+Wire Wire Line
+	4350 4550 4700 4550
+Text Label 2850 2500 0    50   ~ 0
+Vin
+Text Label 2900 4550 0    50   ~ 0
+V-
+Text Label 5100 2500 0    50   ~ 0
+Vout1
+Text Label 7400 2400 0    50   ~ 0
+Vout2
+Text Label 1350 3350 0    50   ~ 0
+BJ_pin1
+Text Label 1350 3550 0    50   ~ 0
+BJ_pin2
+Text Label 1900 3350 0    50   ~ 0
+BJ_pin1
+Text Label 1900 3550 0    50   ~ 0
+BJ_pin2
+Wire Notes Line
+	1700 2100 1700 4300
+Wire Notes Line
+	1700 4300 600  4300
+Wire Notes Line
+	600  4300 600  2100
+Wire Notes Line
+	600  2100 1700 2100
+Wire Notes Line
+	1850 4900 3600 4900
+Wire Notes Line
+	3600 4900 3600 2000
+Wire Notes Line
+	3600 2000 1850 2000
+Wire Notes Line
+	1850 2000 1850 4900
+Wire Notes Line
+	3800 2000 3800 5000
+Wire Notes Line
+	3800 5000 5600 5000
+Wire Notes Line
+	5600 5000 5600 2000
+Wire Notes Line
+	5600 2000 3800 2000
+Wire Notes Line
+	5750 2000 5750 5000
+Wire Notes Line
+	5750 5000 6400 5000
+Wire Notes Line
+	6400 5000 6400 2000
+Wire Notes Line
+	6400 2000 5750 2000
+Wire Notes Line
+	6550 2000 6550 4950
+Wire Notes Line
+	6550 4950 7350 4950
+Wire Notes Line
+	7350 4950 7350 2000
+Wire Notes Line
+	7350 2000 6550 2000
+Wire Notes Line
+	7700 2000 7700 4850
+Wire Notes Line
+	7700 4850 8050 4850
+Wire Notes Line
+	8050 4850 8050 2000
+Wire Notes Line
+	8050 2000 7700 2000
+Wire Notes Line
+	8300 1950 8300 4850
+Wire Notes Line
+	8300 4850 9750 4850
+Wire Notes Line
+	9750 4850 9750 1950
+Wire Notes Line
+	9750 1950 8300 1950
+Text Notes 650  2100 0    50   ~ 0
+B1-POWER INPUT\n
+Text Notes 1900 2000 0    50   ~ 0
+B2-BRIDGE RECTIFIER\n
+Text Notes 3800 2000 0    50   ~ 0
+B3 VOLTAGE REGULATOR\n
+Text Notes 5800 1950 0    50   ~ 0
+B4\nPOWER \nINDICATOR\n
+Text Notes 6600 2000 0    50   ~ 0
+B5 SWITCH
+Text Notes 8050 2000 2    50   ~ 0
+B6 \nOUTPUT \nPOWER\n INDICATOR\n
+Text Notes 8350 1950 0    50   ~ 0
+B7 POWER OUTPUT\n
+$EndSCHEMATC
