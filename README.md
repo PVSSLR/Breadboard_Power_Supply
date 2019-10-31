@@ -22,7 +22,7 @@ The prerequisites are given below
 ```
 
 ### PCB Layout
-<img src="images/1.png" width="300" height ="250">
+<img src="images/1.png" width="300" height ="500">
  
 
  ###  INSTRUCTION 
@@ -30,7 +30,7 @@ The prerequisites are given below
   2. To view the layouts you can go to [gerlook](http://gerblook.org/)
   3. To fabricate, you can upload the the gerber file to oshpark,pcbway
   
-  <img src="images/2.png" >
+ 
   
   ### NOTE 
   This is for Educational Purpose only
